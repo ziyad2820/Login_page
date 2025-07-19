@@ -2,23 +2,31 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Login-page</title>
 </head>
 <body>
     <div class="container">
-        <form action="script.js" >
-            <fieldset>
-            <legend>Sign up</legend>
-            <input type="text" placeholder="Masukan nama mu disini" required><br>
-            <input type="tel" pattern="08[0-9]{2}-[0-9]{4}-[0-9]{4}" inputmode="numeric" placeholder="Masukan nomor mu disini"><br>
-            <input type="email" placeholder="Masukan email mu disini" required><br>
-            <input type="password" minlength="6" placeholder="Masukan passwordmu disini" required><br>
-            <input type="password" placeholder="Konfirmasi password mu " required><br>
-            <input type="submit" value="Sign up"><br>
-            <a href="index.html">Sudah punya akun</a><br>
-            </fieldset>
+        <form id="form-container" action="script.js" method="post">
+            <h1>Daftar</h1>
+            <div class="input-box">
+            <input type="text" placeholder=" MasukanUsername" required autofocus><br>
+            </div>
+            <div class="input-box">
+            <input type="email" placeholder="Masukan email " required><br>
+            </div>
+            <div class="input-box">
+            <input type="password" minlength="6" pattern="(?=.*\d)(?=.*[a-zA-Z]).{6,}" title="pasword harus berisi minimal 6 karakter dan mengandung satu huruf dan satu angka" placeholder="Masukan passwordmu " required><br>
+            </div>
+            <div class="input-box">
+            <input type="password" minlength="6" placeholder="Konfirmasi password " required><br>
+            </div>
+            <div class="btn2">
+            <button type="submit" >Daftar sekarang</button>
+            </div>
         </form>
+        <p>Sudah punya akun <a href="login.html">login disini</a></p>
     </div>
     <script src="script.js"></script>
 </body>
