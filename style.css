@@ -1,6 +1,6 @@
 body{
     margin : 0;
-    background-color: whitesmoke;
+    background-color:blanchedalmond;
     font-family:Arial, Helvetica, sans-serif;
 
 }
@@ -116,10 +116,12 @@ body{
 header{
     display:flex;
     justify-content:space-between;
-    background-color:aqua;
+    background-color:chartreuse;
     font-size:1.5em;
     font-weight:bold;
     z-index:1000;
+    position:fixed;
+    width:100%;
 }
 
 .simbol{
@@ -143,29 +145,96 @@ li a:hover{
     color:blue;
 }
 
-#about{
+
+/*main sesi*/
+main{
     display:flex;
     flex-direction:column;
     justify-content:center;
+    align-items:center;
+    text-align:center;
+    height:90vh;
+    box-sizing:border-box;
+}
+
+main h1{
+    padding-top:50px;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+main p{
+    margin-top:0;
+    width:60%;
+    font-size:20px;
+    margin-bottom: 40px;
+}
+
+main a{
+    border:2px;
+    margin:10px;
+    border:2px solid black;
+    padding:15px 15px;
+    border-radius:10px;
+    color:blue;
+    font-weight:10px;
+
+}
+
+main a:hover{
+    background-color:aqua;
+    color:black;
+}
+
+#about{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
     text-align:center;
     height:100vh;
+    background-color:aqua;
+}
+.kenal{
+    margin-bottom:50px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
 }
 
 #about h1{
+    padding-top:50px;
     font-size:xx-large;
 }
 
 #about #coba{
     font-size:20px;
     font-weight:400;
+    justify-content:center;
+    width:70%;
 }
+
+
 
 .card{
-    display:grid;
-    grid-template-columns: auto;
-
+    display:flex;
+    justify-content:space-evenly;
+    gap:2px;
 }
 
+.card .about-card{
+    width:400px;
+    height:300px;
+    background:aqua;
+    text-align:center;
+    border:5px solid black;
+}
+
+.card p{
+    font-size:18px;
+}
 
 
 
