@@ -140,9 +140,8 @@ ul li{
     list-style:none;
 }
 
-li a:hover{
-    text-decoration:underline;
-    color:blue;
+ul li:hover{
+    background-color:blue;
 }
 
 
@@ -153,7 +152,7 @@ main{
     justify-content:center;
     align-items:center;
     text-align:center;
-    height:90vh;
+    height:100vh;
     box-sizing:border-box;
 }
 
@@ -236,6 +235,72 @@ main a:hover{
     font-size:18px;
 }
 
+#service{
+    display:flex;
+    flex-direction:column;
+    height: 100vh;
+    justify-content: center;
+    text-align:center;
+}
+
+#service .kenal{
+    margin-bottom:50px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+#service h1{
+    padding-top:50px;
+    font-size:xx-large;
+}
+#service #coba{
+    font-size:20px;
+    font-weight:400;
+    justify-content:center;
+    width:70%;
+}
+
+#service.card{
+    display:flex;
+    justify-content:space-evenly;
+    gap:2px;
+}
+
+#service .card .about-card{
+    width:400px;
+    height:300px;
+    background:aqua;
+    text-align:center;
+    border:5px solid black;
+}
+
+#service .card p{
+    font-size:18px;
+}
 
 
+#portfolio{
+    display:flex;
+    flex-direction:column;
+    height: 100vh;
+    background-color:aqua;
+    justify-content: center;
+    text-align:center;
+}
 
+#portfolio h1{
+    padding-top:50px;
+    font-size:xx-large;
+}
+
+.card .about-card{
+    width:400px;
+    height:300px;
+    background:blanchedalmond;
+    text-align:center;
+    border:5px solid black;
+}
